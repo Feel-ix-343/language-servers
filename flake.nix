@@ -19,9 +19,9 @@
             paths = with pkgs; [
               # Python
               pyright
-              python-lsp-server  # pylsp
-              jedi-language-server
-              ruff-lsp
+              python3Packages.python-lsp-server  # pylsp
+              python3Packages.jedi-language-server
+              ruff  # Ruff LSP functionality is built into ruff itself
               
               # JavaScript/TypeScript
               nodePackages.typescript-language-server
@@ -54,7 +54,7 @@
               
               # PHP
               phpactor
-              intelephense
+              # intelephense # Unfree license - remove or enable unfree packages if needed
               
               # Ruby
               ruby-lsp
@@ -70,7 +70,7 @@
               metals
               
               # OCaml
-              ocaml-lsp
+              ocamlPackages.ocaml-lsp
               
               # Elixir
               elixir-ls
@@ -85,7 +85,7 @@
               dart
               
               # R
-              r-languageserver
+              # r-languageserver # Package not found in nixpkgs
               
               # Julia
               julia-lts  # includes language server
@@ -102,8 +102,8 @@
               # XML
               lemminx
               
-              # CSS/SCSS/Less
-              nodePackages.vscode-css-languageserver-bin
+              # CSS/SCSS/Less (and HTML, JSON, ESLint)
+              # nodePackages.vscode-css-languageserver-bin # Removed, replaced by vscode-langservers-extracted above
               
               # Tailwind CSS
               tailwindcss-language-server
@@ -121,7 +121,7 @@
               marksman
               
               # SQL
-              sqlls
+              sqls
               
               # Terraform
               terraform-ls
@@ -139,10 +139,10 @@
               nodePackages.svelte-language-server
               
               # Angular
-              nodePackages."@angular/language-server"
+              angular-language-server
               
               # Prisma
-              nodePackages."@prisma/language-server"
+              # nodePackages."@prisma/language-server" # Package has been removed as broken
               
               # Deno
               deno
