@@ -17,7 +17,10 @@ nix develop github:Feel-ix-343/language-servers
 # Or use directly in your flake
 {
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     language-servers.url = "github:Feel-ix-343/language-servers";
+    # Recommended: pin to your nixpkgs version for consistency
+    language-servers.inputs.nixpkgs.follows = "nixpkgs";
   };
   
   outputs = { self, nixpkgs, language-servers }: {
@@ -116,5 +119,24 @@ nix run github:Feel-ix-343/language-servers#rust-analyzer
 ### Runtime Environments
 - **deno** - Deno runtime with language server
 - **bun** - Bun runtime with language server
+
+## Best Practices
+
+### Input Following
+
+For consistency and to avoid duplicate packages, it's recommended to pin the language-servers flake to your system's nixpkgs version:
+
+```nix
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    language-servers.url = "github:Feel-ix-343/language-servers";
+    # Pin to your nixpkgs version
+    language-servers.inputs.nixpkgs.follows = "nixpkgs";
+  };
+}
+```
+
+This ensures both your system and language servers use the same package versions, reducing build times and potential conflicts.
 
 
