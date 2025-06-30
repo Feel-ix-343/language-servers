@@ -12,12 +12,12 @@ This flake packages together the most commonly used language servers across diff
 
 ```bash
 # Enter development shell with all language servers
-nix develop github:felixmerrick/language-servers
+nix develop github:Feel-ix-343/language-servers
 
 # Or use directly in your flake
 {
   inputs = {
-    language-servers.url = "github:felixmerrick/language-servers";
+    language-servers.url = "github:Feel-ix-343/language-servers";
   };
   
   outputs = { self, nixpkgs, language-servers }: {
@@ -32,7 +32,7 @@ nix develop github:felixmerrick/language-servers
 
 ```bash
 # Install the language servers collection
-nix profile install github:felixmerrick/language-servers
+nix profile install github:Feel-ix-343/language-servers
 
 # Or build locally
 nix build
@@ -42,9 +42,9 @@ nix build
 
 ```bash
 # Run specific language servers
-nix run github:felixmerrick/language-servers#pyright
-nix run github:felixmerrick/language-servers#tsserver
-nix run github:felixmerrick/language-servers#rust-analyzer
+nix run github:Feel-ix-343/language-servers#pyright
+nix run github:Feel-ix-343/language-servers#tsserver
+nix run github:Feel-ix-343/language-servers#rust-analyzer
 ```
 
 ## Supported Language Servers
@@ -172,7 +172,7 @@ Many of these language servers are automatically used by VS Code extensions. For
 ### Building Locally
 
 ```bash
-git clone https://github.com/felixmerrick/language-servers
+git clone https://github.com/Feel-ix-343/language-servers
 cd language-servers
 nix build
 ```
