@@ -118,8 +118,6 @@
               # LaTeX
               texlab
               
-              # Markdown
-              marksman
               
               # SQL
               sqls
