@@ -118,6 +118,8 @@
               # LaTeX
               texlab
               
+              # Grammar and spell checking
+              harper
               
               # SQL
               sqls
@@ -170,6 +172,7 @@
             echo "  Lua: lua-language-server"
             echo "  Haskell: haskell-language-server"
             echo "  Java: jdt-language-server"
+            echo "  Grammar/Spell: harper"
             echo "  And many more..."
           '';
         };
