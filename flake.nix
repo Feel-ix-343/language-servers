@@ -83,7 +83,7 @@
               zls
               
               # Dart
-              dart
+              # dart  # Temporarily disabled due to LICENSE conflict with elixir-ls
               
               # R
               # r-languageserver # Package not found in nixpkgs
