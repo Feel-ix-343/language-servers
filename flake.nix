@@ -20,7 +20,7 @@
               # Python
               pyright
               python3Packages.python-lsp-server  # pylsp
-              python3Packages.jedi-language-server
+              # python3Packages.jedi-language-server
               ruff  # Ruff LSP functionality is built into ruff itself
               ty  # Astral's extremely fast Python type checker
               
