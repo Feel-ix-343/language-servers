@@ -128,7 +128,7 @@
               terraform-ls
               
               # Ansible
-              ansible-language-server
+              # ansible-language-server # Removed from nixpkgs due to being unmaintained
               
               # PowerShell
               powershell
