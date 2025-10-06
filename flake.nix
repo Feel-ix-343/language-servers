@@ -77,7 +77,7 @@
               elixir-ls
               
               # Erlang
-              erlang-ls
+              # erlang-ls
               
               # Zig
               zls
