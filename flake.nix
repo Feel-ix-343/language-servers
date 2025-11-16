@@ -61,9 +61,6 @@
               ruby-lsp
               solargraph
               
-              # Swift
-              sourcekit-lsp
-              
               # Kotlin
               kotlin-language-server
               

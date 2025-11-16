@@ -83,7 +83,6 @@ nix run github:Feel-ix-343/language-servers#rust-analyzer
 - **omnisharp-roslyn** - C# language server
 - **phpactor** / **intelephense** - PHP language servers
 - **ruby-lsp** / **solargraph** - Ruby language servers
-- **sourcekit-lsp** - Swift language server
 - **r-languageserver** - R language server
 - **julia** - Julia (includes language server)
 - **dart** - Dart language server
@@ -138,5 +137,4 @@ For consistency and to avoid duplicate packages, it's recommended to pin the lan
 ```
 
 This ensures both your system and language servers use the same package versions, reducing build times and potential conflicts.
-
 
