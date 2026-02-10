@@ -77,7 +77,7 @@
               # erlang-ls
               
               # Zig
-              zls
+              # zls  # Temporarily disabled - broken in nixpkgs (build fails with symlink permission error)
               
               # Dart
               # dart  # Temporarily disabled due to LICENSE conflict with elixir-ls
@@ -110,7 +110,7 @@
               nodePackages.graphql-language-service-cli
               
               # Dockerfile
-              dockerfile-language-server-nodejs
+              dockerfile-language-server
               
               # LaTeX
               texlab
